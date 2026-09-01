@@ -19,26 +19,12 @@ export const HomePage: React.FC = () => {
       {/* ========================================================================= */}
       {/* STATS HIGHLIGHT BAR */}
       {/* ========================================================================= */}
-      <section className="bg-[#0e0e13] border-y border-amber-500/10 py-12 relative z-20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <ScrollReveal direction="up" delay={0.1}>
-              <div className="font-serif-luxury text-4xl sm:text-5xl text-amber-400 font-semibold mb-2">500+</div>
-              <div className="text-xs uppercase tracking-widest text-slate-400">Unforgettable Events</div>
-            </ScrollReveal>
-            <ScrollReveal direction="up" delay={0.2}>
-              <div className="font-serif-luxury text-4xl sm:text-5xl text-amber-400 font-semibold mb-2">35</div>
-              <div className="text-xs uppercase tracking-widest text-slate-400">Global Destinations</div>
-            </ScrollReveal>
-            <ScrollReveal direction="up" delay={0.3}>
-              <div className="font-serif-luxury text-4xl sm:text-5xl text-amber-400 font-semibold mb-2">99.8%</div>
-              <div className="text-xs uppercase tracking-widest text-slate-400">Perfection Score</div>
-            </ScrollReveal>
-            <ScrollReveal direction="up" delay={0.4}>
-              <div className="font-serif-luxury text-4xl sm:text-5xl text-amber-400 font-semibold mb-2">5+</div>
-              <div className="text-xs uppercase tracking-widest text-slate-400">Years of Artistry</div>
-            </ScrollReveal>
-          </div>
+      <section className="bg-[#0e0e13] border-y border-amber-500/10 py-10 relative z-20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 flex justify-center text-center">
+          <ScrollReveal direction="up" delay={0.1}>
+            <div className="font-serif-luxury text-4xl sm:text-5xl text-amber-400 font-semibold mb-2">5+</div>
+            <div className="text-xs uppercase tracking-widest text-slate-400">Years of Artistry</div>
+          </ScrollReveal>
         </div>
       </section>
 
