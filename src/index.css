@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-gold: #E6A73A;
+    --color-gold-light: #F5C26B;
+    --color-gold-dark: #B87C1D;
+    --color-dark-bg: #0B0B0E;
+    --color-dark-surface: #13131A;
+    --color-dark-card: #1A1A24;
+  }
+
+  body {
+    background-color: #0B0B0E;
+    color: #F1F5F9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Luxury Utility Classes */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #E6A73A 0%, #D49022 50%, #B87C1D 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F8D38D 0%, #E6A73A 50%, #C48518 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-glow {
+  border: 1px solid rgba(230, 167, 58, 0.25);
+  box-shadow: 0 0 20px -5px rgba(230, 167, 58, 0.15);
+}
+
+.border-gold-glow:hover {
+  border-color: rgba(230, 167, 58, 0.6);
+  box-shadow: 0 0 25px 0px rgba(230, 167, 58, 0.3);
+}
+
+.glass-panel {
+  background: rgba(19, 19, 26, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(11, 11, 14, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #262633;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E6A73A;
+}
